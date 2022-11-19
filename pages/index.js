@@ -1,11 +1,11 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 
 const posts =[
   { title: 'Daily News', excerpt:'Premier League Team of the Season so far' },
+  { title: 'Transfer', excerpt:"Janaunary tranfer news"},
 ];
 
-const Home: NextPage = () => {
+export default function Home () {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -26,5 +26,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home
