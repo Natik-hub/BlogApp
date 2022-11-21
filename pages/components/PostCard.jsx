@@ -1,9 +1,12 @@
 import React from 'react'
 
-const PostCard = () => {
+const PostCard = ({post}) => {
   return (
-    <div>PostCard</div>
+    <div>
+      {post.title}
+      {post.excerpt}
+    </div>
   )
 }
 
-export default PostCard
+export default PostCard;
