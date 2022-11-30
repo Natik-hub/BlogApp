@@ -3,12 +3,13 @@ import { request, gql } from 'graphql-request';
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 export const getPosts = async () => {
+
   const query = gql`
   query Assets {
     postsConnection {
       edges {
         node {
-          authors {
+          author {
             bio
             name
             id
@@ -63,7 +64,7 @@ export const getPostDetails = async (slug) => {
         featuredImage {
           url
         }
-        authors{
+        author{
           name
           bio
           photo {
