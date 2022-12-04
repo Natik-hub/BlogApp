@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm} from '../components';
+import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm} from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 
 const PostDetails = ({ post }) => {
